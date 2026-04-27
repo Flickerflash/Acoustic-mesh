@@ -1,0 +1,1 @@
+{ "name": "acoustic-mesh", "private": true, "workspaces": ["apps/*", "services/*", "packages/*"], "scripts": { "dev": "concurrently \"node services/signaling/index.js\" \"npm run dev --workspace apps/web\"", "build": "npm run build --workspaces" }, "devDependencies": { "concurrently": "^8.0.0" } }
