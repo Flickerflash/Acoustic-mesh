@@ -1,0 +1,21 @@
+Acoustic-mesh
+Copyright 2025-2026 Ndr "Ender" Hensel (Flickerflash)
+
+Licensed under the MIT License.
+See the LICENSE file for the full terms.
+
+---
+
+This repository is part of the Flickerflash DGAF (Dynamic Governance Agentic Formation)
+ecosystem. It implements a production-grade multi-device acoustic mesh system with
+WebRTC peer connections, phi-harmonic modal analysis, and SLAM graph aggregation.
+
+Governance Authority: Agent Amethyst (DGAF ecosystem meta-orchestrator)
+Governance Spine: https://github.com/Flickerflash/DGAF-Framework
+Phi-Harmonic Ecosystem Partners:
+  - Driftwatch: https://github.com/Flickerflash/Driftwatch
+  - 3d-visualization-hub: https://github.com/Flickerflash/3d-visualization-hub
+
+Developed by Ndr "Ender" Hensel (Flickerflash)
+AI Orchestration Engineer & Systems Architect, Columbus OH
+https://github.com/Flickerflash
