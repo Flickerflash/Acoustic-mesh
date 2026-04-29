@@ -1,0 +1,78 @@
+name: Acoustic-mesh CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-and-build:
+    name: Lint & Build Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: |
+          if [ -f package.json ]; then
+            npm ci
+          else
+            echo "No package.json found — skipping npm install"
+          fi
+
+      - name: Lint (ESLint)
+        run: |
+          if [ -f package.json ] && grep -q '"eslint"' package.json; then
+            npm run lint
+          else
+            echo "No ESLint config found — running basic JS syntax check"
+            find . -name '*.js' -not -path './node_modules/*' \
+              -exec node --check {} \; && echo "Syntax OK"
+          fi
+
+      - name: Build check
+        run: |
+          if [ -f package.json ] && grep -q '"build"' package.json; then
+            npm run build
+          else
+            echo "No build script — skipping"
+          fi
+
+  governance-badge:
+    name: DGAF Governance Check
+    runs-on: ubuntu-latest
+    needs: lint-and-build
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify governance markers
+        run: |
+          echo "Checking for required governance markers..."
+          MISSING=0
+
+          if [ ! -f README.md ]; then
+            echo "WARN: README.md missing"
+            MISSING=$((MISSING+1))
+          fi
+
+          if [ ! -f LICENSE ] && [ ! -f LICENSE.md ]; then
+            echo "WARN: LICENSE missing"
+            MISSING=$((MISSING+1))
+          fi
+
+          if [ $MISSING -gt 0 ]; then
+            echo "$MISSING governance marker(s) missing — review recommended"
+          else
+            echo "All governance markers present ✓"
+          fi
