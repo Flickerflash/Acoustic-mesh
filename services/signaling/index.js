@@ -1,11 +1,18 @@
 const WebSocket = require("ws");
 
-const wss = new WebSocket.Server({ port: 8080 });
+const PORT = process.env.PORT || 8080;
+const wss = new WebSocket.Server({ port: PORT });
 const rooms = new Map();
 
 wss.on("connection", (ws) => {
   ws.on("message", (msg) => {
-    const data = JSON.parse(msg);
+    let data;
+    try {
+      data = JSON.parse(msg);
+    } catch (e) {
+      ws.send(JSON.stringify({ type: "error", message: "Invalid JSON" }));
+      return;
+    }
 
     if (data.type === "join") {
       ws.room = data.room;
@@ -16,9 +23,10 @@ wss.on("connection", (ws) => {
     if (data.type === "signal") {
       const room = rooms.get(ws.room);
       if (!room) return;
-
       room.forEach((client) => {
-        if (client !== ws) client.send(JSON.stringify(data));
+        if (client !== ws && client.readyState === WebSocket.OPEN) {
+          client.send(JSON.stringify(data));
+        }
       });
     }
   });
@@ -26,8 +34,19 @@ wss.on("connection", (ws) => {
   ws.on("close", () => {
     if (ws.room && rooms.has(ws.room)) {
       rooms.get(ws.room).delete(ws);
+      if (rooms.get(ws.room).size === 0) {
+        rooms.delete(ws.room);
+      }
     }
+  });
+
+  ws.on("error", (err) => {
+    console.error("WebSocket client error:", err.message);
   });
 });
 
-console.log("Signaling running on :8080");
+process.on("SIGTERM", () => {
+  wss.close(() => process.exit(0));
+});
+
+console.log(`Signaling server running on :${PORT}`);
