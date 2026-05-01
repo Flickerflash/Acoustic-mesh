@@ -4,9 +4,11 @@
 ![License](https://img.shields.io/badge/License-MIT-blue)
 ![Topics](https://img.shields.io/badge/topics-webrtc%20%7C%20websocket%20%7C%20acoustic%20%7C%20mesh--network%20%7C%20phi--harmonic-purple)
 
-> **Governance:** DGAF / Agent Amethyst — Yes. This project is part of the Flickerflash DGAF Phi-Harmonic Pentagon ecosystem. See [DGAF-Framework](https://github.com/Flickerflash/DGAF-Framework) for spine documentation.
+> **Governance:** DGAF / Agent Amethyst — Part of the ndrorchestration Phi-Harmonic Pentagon ecosystem. See [DGAF-Framework](https://github.com/ndrorchestration/DGAF-Framework) for spine documentation.
 
 **Acoustic Mesh Platform** — a production-grade multi-device acoustic mesh system implementing WebRTC peer connections, WebSocket signaling, secure sensor pipelines, feature extraction, and SLAM graph aggregation, anchored to the Phi-Harmonic Pentagon ecosystem.
+
+> **What this is:** A distributed acoustic sensing and coordination platform that connects multiple devices into a real-time mesh network for audio/spatial data collection, signal analysis, and modal frequency processing — built in JavaScript/Node.js with WebRTC and WebSocket infrastructure.
 
 ## Architecture
 
@@ -33,7 +35,7 @@ acoustic-mesh/
 ## Quick Start
 
 ```bash
-git clone https://github.com/Flickerflash/Acoustic-mesh.git
+git clone https://github.com/ndrorchestration/Acoustic-mesh.git
 cd Acoustic-mesh
 npm install
 npm run dev
@@ -51,10 +53,14 @@ This starts the signaling server and web client concurrently via `concurrently`.
 
 ## Related Ecosystem
 
-- [Driftwatch](https://github.com/Flickerflash/Driftwatch) — Phi-driven drift detection and harmonic state monitoring
-- [3d-visualization-hub](https://github.com/Flickerflash/3d-visualization-hub) — Phi-harmonic modal analysis and 3D data viz
-- [DGAF-Framework](https://github.com/Flickerflash/DGAF-Framework) — governance spine for multi-agent systems
-- [junior-apogee-app](https://github.com/Flickerflash/junior-apogee-app) — AI evaluation and QA platform
+- [Driftwatch](https://github.com/ndrorchestration/Driftwatch) — Phi-driven drift detection and harmonic state monitoring
+- [3d-visualization-hub](https://github.com/ndrorchestration/3d-visualization-hub) — Phi-harmonic modal analysis and 3D data viz
+- [DGAF-Framework](https://github.com/ndrorchestration/DGAF-Framework) — governance spine for multi-agent systems
+- [junior-apogee-app](https://github.com/ndrorchestration/junior-apogee-app) — AI evaluation and QA platform
+
+## GitHub Topics
+
+> Add these via GitHub Settings → Topics: `webrtc` `websocket` `acoustic` `mesh-network` `phi-harmonic` `javascript` `nodejs`
 
 ## License
 
@@ -62,4 +68,4 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 ## Provenance
 
-Developed by [Ndr "Ender" Hensel](https://github.com/Flickerflash) — AI Orchestration Engineer & Systems Architect, Columbus OH.
+Developed by [Ndr "Ender" Hensel](https://github.com/ndrorchestration) — AI Orchestration Engineer & Systems Architect, Columbus OH.
