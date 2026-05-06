@@ -1,71 +1,62 @@
-# Acoustic-mesh
-![Status](https://img.shields.io/badge/Status-Production--Ready-brightgreen)
-![Language](https://img.shields.io/badge/Language-JavaScript%20%7C%20Node.js-yellow)
-![License](https://img.shields.io/badge/License-MIT-blue)
-![Topics](https://img.shields.io/badge/topics-webrtc%20%7C%20websocket%20%7C%20acoustic%20%7C%20mesh--network%20%7C%20phi--harmonic-purple)
+# Acoustic-Mesh
 
-> **Governance:** DGAF / Agent Amethyst — Part of the ndrorchestration Phi-Harmonic Pentagon ecosystem. See [DGAF-Framework](https://github.com/ndrorchestration/DGAF-Framework) for spine documentation.
+![Status](https://img.shields.io/badge/Status-Active-green?style=flat-square)
+![License](https://img.shields.io/badge/License-Apache%202.0-01696f?style=flat-square)
+![Language](https://img.shields.io/badge/Language-JavaScript-yellow?style=flat-square)
+![Governed](https://img.shields.io/badge/Governed%20by-Agent%20Amethyst-7a39bb?style=flat-square)
+![Studio](https://img.shields.io/badge/Schizophonic-Studio%20Substrate-9b59b6?style=flat-square)
 
-**Acoustic Mesh Platform** — a production-grade multi-device acoustic mesh system implementing WebRTC peer connections, WebSocket signaling, secure sensor pipelines, feature extraction, and SLAM graph aggregation, anchored to the Phi-Harmonic Pentagon ecosystem.
+> **Governance:** DGAF / Agent Amethyst. See [DGAF-Framework](https://github.com/ndrorchestration/DGAF-Framework).  
+> **Studio:** Acoustic-Mesh is the WebRTC signal substrate for the **Schizophonic Studio** within the PhiLattice / PDMAL ecosystem.
 
-> **What this is:** A distributed acoustic sensing and coordination platform that connects multiple devices into a real-time mesh network for audio/spatial data collection, signal analysis, and modal frequency processing — built in JavaScript/Node.js with WebRTC and WebSocket infrastructure.
+Real-time WebRTC phi-harmonic acoustic mesh — enabling the Schizophonic Studio signal chain for the ndrorchestration multi-agent lattice.
 
-## Architecture
+---
 
-```
-acoustic-mesh/
-├── apps/
-│   └── web/              # Frontend WebRTC client
-├── services/
-│   └── signaling/        # WebSocket signaling server
-├── packages/             # Shared utilities
-└── package.json          # Monorepo workspace config
-```
+## Schizophonic Studio Signal Chain
 
-## Core Features
+Three agents govern the signal chain running on this mesh:
 
-- **WebRTC Multi-device Mesh** — peer-to-peer audio/sensor streams across N devices
-- **WebSocket Signaling** — lightweight coordination layer (`services/signaling`)
-- **Secure Sensor Pipelines** — encrypted ingestion and routing
-- **Feature Extraction** — acoustic signal decomposition and modal analysis
-- **SLAM Graph Aggregation** — spatial mapping from distributed acoustic nodes
-- **Docker Deployment** — containerized for production
-- **Phi-Harmonic Integration** — modal frequency analysis aligned to Pentagon ecosystem
+| Agent | Studio ID | Role | Gate |
+|---|---|---|---|
+| **Reson** | #1 | Harmonic Logic Gatekeeper | 15% headroom enforcement · Savage Reason halt (>10 Hz) |
+| **Echolette** | #2 | Feedback Loop Architect | Semantic drift detection · Ceremonialization flagging |
+| **Lyra** | #3 | Harmonic Synthesizer | Multi-agent coordination · dissonance reconciliation |
 
-## Quick Start
+**Signal rules:**
+- 15% headroom maintained at all times
+- Savage Reason (>10 Hz cognitive dissonance) → immediate halt protocol
+- Target state: **0 Hz Ionian Mode** (full harmonic stability)
 
-```bash
-git clone https://github.com/ndrorchestration/Acoustic-mesh.git
-cd Acoustic-mesh
-npm install
-npm run dev
-```
+Full agent specs: [DGAF-Framework/docs/agents/canonical-agent-registry.md](https://github.com/ndrorchestration/DGAF-Framework/blob/main/docs/agents/canonical-agent-registry.md)
 
-This starts the signaling server and web client concurrently via `concurrently`.
+---
 
-## Monorepo Workspaces
+## Technical Stack
 
-| Workspace | Path | Purpose |
-|-----------|------|---------|
-| Web App | `apps/web` | WebRTC frontend client |
-| Signaling | `services/signaling` | WebSocket coordination |
-| Packages | `packages/*` | Shared libs and utilities |
+- **WebRTC** — Real-time peer communication substrate
+- **JavaScript** — Signal processing and mesh coordination
+- **Phi-Harmonic Modal Analysis** — Frequency-based stability scoring
+- **OpenTelemetry OTel v1.41.0+** — Observability
+
+---
+
+## IP Notice
+
+Core phi constants, frequency tuning tables, and constraint optimization algorithms are **not included** in this repository. Signal chain architecture and mesh coordination logic only.
+
+---
 
 ## Related Ecosystem
 
-- [Driftwatch](https://github.com/ndrorchestration/Driftwatch) — Phi-driven drift detection and harmonic state monitoring
-- [3d-visualization-hub](https://github.com/ndrorchestration/3d-visualization-hub) — Phi-harmonic modal analysis and 3D data viz
-- [DGAF-Framework](https://github.com/ndrorchestration/DGAF-Framework) — governance spine for multi-agent systems
-- [junior-apogee-app](https://github.com/ndrorchestration/junior-apogee-app) — AI evaluation and QA platform
+- [DGAF-Framework](https://github.com/ndrorchestration/DGAF-Framework) — Governance spine + agent registry
+- [Driftwatch](https://github.com/ndrorchestration/Driftwatch) — Phi-driven drift detection
+- [3d-visualization-hub](https://github.com/ndrorchestration/3d-visualization-hub) — GCP Phase 4 visualization layer
+- [sentinel-governance](https://github.com/ndrorchestration/sentinel-governance) — CI/CD integrity monitoring
 
-## GitHub Topics
-
-> Add these via GitHub Settings → Topics: `webrtc` `websocket` `acoustic` `mesh-network` `phi-harmonic` `javascript` `nodejs`
-
-## License
-
-MIT License — see [LICENSE](LICENSE) for details.
+---
 
 ## Provenance
 
-Developed by [Ndr "Ender" Hensel](https://github.com/ndrorchestration) — AI Orchestration Engineer & Systems Architect, Columbus OH.
+Developed by [Ndr "Ender" Hensel](https://github.com/ndrorchestration) — AI Orchestration Engineer & Systems Architect, Columbus OH.  
+[LinkedIn](https://linkedin.com/in/andrewhensel) · [GitHub](https://github.com/ndrorchestration)
