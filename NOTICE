@@ -1,21 +1,21 @@
 Acoustic-mesh
-Copyright 2025-2026 Ndr "Ender" Hensel (Flickerflash)
+Copyright 2025-2026 Ndr "Ender" Hensel
 
 Licensed under the MIT License.
 See the LICENSE file for the full terms.
 
 ---
 
-This repository is part of the Flickerflash DGAF (Dynamic Governance Agentic Formation)
-ecosystem. It implements a production-grade multi-device acoustic mesh system with
-WebRTC peer connections, phi-harmonic modal analysis, and SLAM graph aggregation.
+Acoustic-mesh is an independent experimental multi-device acoustic-mesh engineering repository. It contains WebRTC peer-connection, visualization, signal-processing, and graph-aggregation work where implemented.
 
-Governance Authority: Agent Amethyst (DGAF ecosystem meta-orchestrator)
-Governance Spine: https://github.com/Flickerflash/DGAF-Framework
-Phi-Harmonic Ecosystem Partners:
-  - Driftwatch: https://github.com/Flickerflash/Driftwatch
-  - 3d-visualization-hub: https://github.com/Flickerflash/3d-visualization-hub
+Historical/project-local ecosystem references include DGAF-Framework, PDMAL, Driftwatch, the Schizophonic Studio vocabulary, and phi-harmonic analysis concepts. Those references do not establish inherited governance authority, certification, production readiness, physical acoustic performance, cognitive measurement, or empirical validity.
 
-Developed by Ndr "Ender" Hensel (Flickerflash)
-AI Orchestration Engineer & Systems Architect, Columbus OH
-https://github.com/Flickerflash
+Current claims about this repository are bounded by its own source, tests, CI, and dated evidence. Cross-repository status does not transfer automatically.
+
+Related repositories:
+  - DGAF-Framework: https://github.com/ndrorchestration/DGAF-Framework
+  - Driftwatch: https://github.com/ndrorchestration/Driftwatch
+  - 3d-visualization-hub: https://github.com/ndrorchestration/3d-visualization-hub
+
+Developed by Ndr "Ender" Hensel
+https://github.com/ndrorchestration
