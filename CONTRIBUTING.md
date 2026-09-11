@@ -1,38 +1,43 @@
 # Contributing to Acoustic-Mesh
 
-## Governance
+## Governance and Evidence Boundary
 
-Acoustic-Mesh is the WebRTC substrate of the **Schizophonic Studio** — part of the PhiLattice / PDMAL ecosystem, meta-orchestrated by **Agent Amethyst** and governed under the [DGAF Framework](https://github.com/ndrorchestration/DGAF-Framework).
+Acoustic-Mesh is an **independent experimental repository**. It may reuse terminology, design patterns, or evaluation ideas from DGAF-Framework, PDMAL, Driftwatch, and related ndrorchestration projects, but those references do not transfer governance authority, certification, validation, deployment state, or empirical results into this repository.
+
+Repository-local source, tests, CI, and dated evidence govern claims about Acoustic-Mesh. Agent/persona names and ecosystem labels are architectural or historical vocabulary only; they are not approval authorities.
 
 ## Schizophonic Studio Context
 
-This mesh serves as the real-time acoustic signal backbone for the Studio trio:
-- **Reson (#1)** — Harmonic Logic / Signal Chain integrity gatekeeper
-- **Echolette (#2)** — Feedback loop architecture / semantic drift detection
-- **Lyra (#3)** — Orchestral synthesis / multi-agent coordination
+The project has historically described this mesh as the real-time acoustic signal substrate for a project-local Studio trio:
+- **Reson (#1)** — harmonic-logic / signal-chain role
+- **Echolette (#2)** — feedback-loop / semantic-drift role
+- **Lyra (#3)** — orchestral-synthesis / coordination role
 
-Signal chain rules: 15% headroom maintained · Savage Reason (>10 Hz) detection active · 0 Hz Ionian Mode target.
+Labels such as 15% headroom, Savage Reason (>10 Hz), and a 0 Hz Ionian Mode target are retained as project-local design concepts. They are not established physical, cognitive, acoustic, or safety thresholds unless a specific reproducible test establishes the corresponding claim.
 
 ## Standards & Attribution
 
-- **WebRTC** — Real-time communication substrate
-- **Phi-Harmonic Modal Analysis** — Acoustic signal processing
-- **DGAF NDR patterns** — Governance and integrity constraints
-- **OpenTelemetry OTel v1.41.0+** — Observability
+- **WebRTC** — real-time communication substrate
+- **Phi-Harmonic Modal Analysis** — project-local acoustic/signal-analysis construct
+- **DGAF / NDR patterns** — reusable governance and integrity design references
+- **OpenTelemetry** — observability tooling where implemented
+
+Use of a standard, framework, or pattern name does not establish compliance or certification.
 
 ## IP Notice
 
-Phi ratio constants, frequency tuning tables, and constraint algorithms are **not included**. Mesh architecture and signal processing logic only.
+Phi ratio constants, frequency tuning tables, and constraint algorithms are **not included**. Mesh architecture and signal-processing logic only.
 
 ## How to Contribute
 
-1. Open an issue with a clear problem statement
-2. Fork and branch from `main`
-3. Signal chain changes must pass Reson’s 15% headroom gate (document test evidence)
-4. Submit PR with NDR pattern reference
+1. Open an issue with a clear problem statement.
+2. Fork and branch from `main`.
+3. For signal-chain or threshold changes, document the exact criterion, test method, inputs, and observed result rather than relying on an agent/persona approval label.
+4. Run the repository-local verification required by CI.
+5. Submit a PR that distinguishes implemented behavior, verified behavior, and hypotheses or design targets.
 
 ## Cross-References
 
-- [DGAF-Framework](https://github.com/ndrorchestration/DGAF-Framework) — Governance & Schizophonic Studio specs
-- [Driftwatch](https://github.com/ndrorchestration/Driftwatch) — Drift detection substrate
-- [3d-visualization-hub](https://github.com/ndrorchestration/3d-visualization-hub) — GCP visualization layer
+- [DGAF-Framework](https://github.com/ndrorchestration/DGAF-Framework) — related governance research; no status transfer
+- [Driftwatch](https://github.com/ndrorchestration/Driftwatch) — related drift-detection research
+- [3d-visualization-hub](https://github.com/ndrorchestration/3d-visualization-hub) — related visualization work
